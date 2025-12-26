@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Page</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+ header{
+      background:#0a4d66;
+      padding:15px 60px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:#fff;
+    }
+
+    header ul{
+      display:flex;
+      list-style:none;
+      gap:25px;
+    }
+
+    header a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    header .login{
+      background:#fff;
+      color:#0a4d66;
+      padding:8px 14px;
+      border-radius:4px;
+      font-weight:600;
+    }
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+  color: #222;
+}
+
+/* HERO */
+.hero {
+  height: 45vh;
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+              url("hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.contact-section {
+  padding: 50px 20px;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #1e40af;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.icons span {
+  font-size: 22px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+    footer{
+      background:#063547;
+      color:#fff;
+      padding:50px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:30px;
+    }
+
+    footer h4{
+      margin-bottom:10px;
+    }
+
+    footer a{
+      color:#ddd;
+      display:block;
+      margin-bottom:6px;
+      text-decoration:none;
+    }
+
+    footer i{
+      margin-right:8px;
+    }
+    
+    .social-icons a {
+  font-size: 22px;
+  margin-right: 15px;
+  color: #1e40af;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e11d48;
+}
+
+.fa-linkedin-in { color: #0a66c2; }
+.fa-instagram { color: #e1306c; }
+.fa-facebook-f { color: #1877f2; }
+.fa-youtube { color: #ff0000; }
+   
+  </style>
+</head>
+<body>
+
+    <header>
+<img src="logo.png" alt="">
+  <h2>Magizh Builders</h2>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="signin.html" class="login">Login / Signup</a>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Connecting Dreams</h1>
+    <p>Contact us Today!</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-form">
+      <h2>Your Perfect Dreams Start with a Conversation!</h2>
+
+      <form>
+        <label>Full Name*</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Phone Number*</label>
+        <input type="text" placeholder="Enter phone number">
+
+        <label>Email Address*</label>
+        <input type="email" placeholder="Enter email">
+
+        <label>Enter Your Message</label>
+        <textarea rows="5" placeholder="Type your message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+
+      <p><strong>📍 Address</strong><br>
+        Magizh Builders,<br>
+        Ground Floor No.5 Bishop Wallers Avenue,<br>
+        Mylapore, Chennai - 600004, Tamilnadu
+      </p>
+
+      <p><strong>📞 Phone</strong><br>
+        +91 123 456 789
+      </p>
+
+      <p><strong>✉ Email</strong><br>
+        magizhbuilders@gmail.com
+      </p>
+
+      <p><strong>🕒 Business Hours</strong><br>
+        Mon - Sat<br>
+        10.00 AM - 7.00 PM
+      </p>
+
+      <div class="social">
+        <h4>Connect with us</h4>
+       <div class="social-icons">
+  <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div>
+    <h4>Magizh Builders</h4>
+    <p>Premium Builders in Chennai</p>
+  </div>
+
+   <div>
+    <h4>Pricing</h4>
+    <a href="#">About</a>
+    <a href="#">Add properties</a>
+   
+  </div>
+
+  <div>
+    <h4>Legal</h4>
+    <a href="#">Privacy Policy</a>
+    <a href="#">license aggrement</a>
+    <a href="#">Terms of use</a>
+    <a href="#">cookie Policy</a>
+  </div>
+
+  <div>
+    <h4>Get in Touch</h4>
+    <p><i class="fa fa-location-dot"></i>39,kodambakkam road,<br> Chennai,600033 Tamil Nadu</p><br>        
+    <p><i class="fa fa-phone"></i> +91 12345 6789</p> <br>
+    <p><i class="fa fa-envelope"></i> info@magizhbuilders.com</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
